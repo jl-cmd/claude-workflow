@@ -1,0 +1,10 @@
+{
+  "name": "claude-workflow",
+  "description": "Workflow enforcement for Claude Code skills. Adds a Stop hook that blocks session completion until all defined workflow steps are finished.",
+  "version": "0.1.0",
+  "author": {
+    "name": "jl-cmd"
+  },
+  "license": "MIT",
+  "keywords": ["workflow", "hooks", "enforcement", "stop-hook", "completion"]
+}

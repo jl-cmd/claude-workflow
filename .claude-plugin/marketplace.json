@@ -1,0 +1,19 @@
+{
+  "name": "claude-workflow",
+  "owner": {
+    "name": "jl-cmd"
+  },
+  "metadata": {
+    "description": "Workflow enforcement plugin for Claude Code"
+  },
+  "plugins": [
+    {
+      "name": "workflow",
+      "source": "../",
+      "description": "Stop hook that blocks premature completion of multi-step skills. Skills opt in via hooks frontmatter.",
+      "version": "0.1.0",
+      "category": "productivity",
+      "tags": ["workflow", "hooks", "enforcement", "stop-hook"]
+    }
+  ]
+}
