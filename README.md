@@ -4,8 +4,16 @@ Workflow enforcement for Claude Code skills. A Stop hook blocks session completi
 
 ## Installation
 
-```bash
-/install jl-cmd/claude-workflow
+1. Add the marketplace:
+
+```shell
+/plugin marketplace add jl-cmd/claude-workflow
+```
+
+2. Install the plugin:
+
+```shell
+/plugin install claude-workflow@jl-cmd-claude-workflow
 ```
 
 ## How It Works
