@@ -5,7 +5,7 @@ Workflow enforcement for Claude Code skills. A Stop hook blocks session completi
 ## Installation
 
 ```bash
-claude plugin add /path/to/claude-workflow
+/install jl-cmd/claude-workflow
 ```
 
 ## How It Works
