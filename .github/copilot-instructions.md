@@ -3,8 +3,8 @@
 AUTO-GENERATED — DO NOT EDIT.
 Source of truth: jl-cmd/claude-code-config/.github/copilot-instructions.md
 Synced by: .github/workflows/sync-ai-rules.yml
-Source commit: c5d6d8f9ddca2e156c45da24b4d210d17a1da278
-Synced at: 2026-07-30T14:45:24.616340+00:00
+Source commit: 38b416b8c92e36b43db920afd4fafce65eac6e0c
+Synced at: 2026-08-08T21:26:10.701722+00:00
 -->
 <!-- SYNC-HEADER-END -->
 
@@ -41,7 +41,7 @@ This file is **rules-only**. Repo layout, build commands, and workflow guidance 
 - [Scope of review](#scope-of-review)
 - [Hook enforcement](#hook-enforcement)
 
-Many bullets are implemented in `packages/claude-dev-env/hooks/blocking/code_rules_enforcer.py` (`validate_content` for Python and a small JavaScript subset). The default `PreToolUse` `Write|Edit` chain in `packages/claude-dev-env/hooks/hooks.json` registers that script alongside `tdd_enforcer.py`, `windows_rmtree_blocker.py`, the `run_all_validators` entrypoint, and others; the `Bash` chain registers `destructive_command_blocker.py`, `gh_body_arg_blocker.py`, `block_main_commit.py`, and `pr_description_enforcer.py`. **Hook enforcement** below maps each rule to its **source script** and notes Python-only coverage where it applies. Flag violations from the diff in review even when no local hook runs the same check.
+Many bullets are implemented in `packages/claude-dev-env/hooks/blocking/code_rules_enforcer.py` (`validate_content` for Python and a small JavaScript subset). The default `PreToolUse` `Write|Edit` chain in `packages/claude-dev-env/hooks/hooks.json` registers that script alongside `tdd_enforcer.py`, `windows_rmtree_blocker.py`, the `run_all_validators` entrypoint, and others; the `Bash` chain registers `destructive_command_blocker.py`, `gh_body_arg_blocker.py`, and `block_main_commit.py`. **Hook enforcement** below maps each rule to its **source script** and notes Python-only coverage where it applies. Flag violations from the diff in review even when no local hook runs the same check.
 
 ---
 
